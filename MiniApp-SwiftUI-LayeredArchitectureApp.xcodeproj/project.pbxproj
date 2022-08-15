@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95FC11F628AA074E00E1627A /* MiniApp_SwiftUI_LayeredArchitectureAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC11F528AA074E00E1627A /* MiniApp_SwiftUI_LayeredArchitectureAppApp.swift */; };
+		95FC11F828AA074E00E1627A /* iTunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC11F728AA074E00E1627A /* iTunesListView.swift */; };
+		95FC11FA28AA074F00E1627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC11F928AA074F00E1627A /* Assets.xcassets */; };
+		95FC11FD28AA074F00E1627A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC11FC28AA074F00E1627A /* Preview Assets.xcassets */; };
+		95FC120928AA0AEA00E1627A /* SongListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC120828AA0AEA00E1627A /* SongListFeature.swift */; };
+		95FC120B28AA0B3800E1627A /* SongListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC120A28AA0B3800E1627A /* SongListRepository.swift */; };
+		95FC120D28AA0B7200E1627A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC120C28AA0B7200E1627A /* APIRequest.swift */; };
+		95FC120F28AA0BE200E1627A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC120E28AA0BE200E1627A /* Song.swift */; };
+		95FC122C28AA1C8B00E1627A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 95FC122B28AA1C8B00E1627A /* SDWebImageSwiftUI */; };
+		95FC122E28AA21FA00E1627A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC122D28AA21FA00E1627A /* SafariView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95FC11F228AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp-SwiftUI-LayeredArchitectureApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FC11F528AA074E00E1627A /* MiniApp_SwiftUI_LayeredArchitectureAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp_SwiftUI_LayeredArchitectureAppApp.swift; sourceTree = "<group>"; };
+		95FC11F728AA074E00E1627A /* iTunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesListView.swift; sourceTree = "<group>"; };
+		95FC11F928AA074F00E1627A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95FC11FC28AA074F00E1627A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95FC120828AA0AEA00E1627A /* SongListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListFeature.swift; sourceTree = "<group>"; };
+		95FC120A28AA0B3800E1627A /* SongListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRepository.swift; sourceTree = "<group>"; };
+		95FC120C28AA0B7200E1627A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		95FC120E28AA0BE200E1627A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		95FC122D28AA21FA00E1627A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95FC11EF28AA074E00E1627A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FC122C28AA1C8B00E1627A /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95FC11E928AA074E00E1627A = {
+			isa = PBXGroup;
+			children = (
+				95FC11F428AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp */,
+				95FC11F328AA074E00E1627A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95FC11F328AA074E00E1627A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95FC11F228AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95FC11F428AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp */ = {
+			isa = PBXGroup;
+			children = (
+				95FC120728AA0A1A00E1627A /* Repository */,
+				95FC120628AA09EB00E1627A /* Feature */,
+				95FC120528AA09E300E1627A /* DataObject */,
+				95FC120428AA09D700E1627A /* APIRequest */,
+				95FC120328AA098100E1627A /* View */,
+				95FC11F528AA074E00E1627A /* MiniApp_SwiftUI_LayeredArchitectureAppApp.swift */,
+				95FC11F928AA074F00E1627A /* Assets.xcassets */,
+				95FC11FB28AA074F00E1627A /* Preview Content */,
+			);
+			path = "MiniApp-SwiftUI-LayeredArchitectureApp";
+			sourceTree = "<group>";
+		};
+		95FC11FB28AA074F00E1627A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95FC11FC28AA074F00E1627A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95FC120328AA098100E1627A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95FC11F728AA074E00E1627A /* iTunesListView.swift */,
+				95FC122D28AA21FA00E1627A /* SafariView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95FC120428AA09D700E1627A /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				95FC120C28AA0B7200E1627A /* APIRequest.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		95FC120528AA09E300E1627A /* DataObject */ = {
+			isa = PBXGroup;
+			children = (
+				95FC120E28AA0BE200E1627A /* Song.swift */,
+			);
+			path = DataObject;
+			sourceTree = "<group>";
+		};
+		95FC120628AA09EB00E1627A /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				95FC120828AA0AEA00E1627A /* SongListFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		95FC120728AA0A1A00E1627A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				95FC120A28AA0B3800E1627A /* SongListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95FC11F128AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FC120028AA074F00E1627A /* Build configuration list for PBXNativeTarget "MiniApp-SwiftUI-LayeredArchitectureApp" */;
+			buildPhases = (
+				95FC11EE28AA074E00E1627A /* Sources */,
+				95FC11EF28AA074E00E1627A /* Frameworks */,
+				95FC11F028AA074E00E1627A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MiniApp-SwiftUI-LayeredArchitectureApp";
+			packageProductDependencies = (
+				95FC122B28AA1C8B00E1627A /* SDWebImageSwiftUI */,
+			);
+			productName = "MiniApp-SwiftUI-LayeredArchitectureApp";
+			productReference = 95FC11F228AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95FC11EA28AA074E00E1627A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					95FC11F128AA074E00E1627A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 95FC11ED28AA074E00E1627A /* Build configuration list for PBXProject "MiniApp-SwiftUI-LayeredArchitectureApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95FC11E928AA074E00E1627A;
+			packageReferences = (
+				95FC122A28AA1C8B00E1627A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 95FC11F328AA074E00E1627A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95FC11F128AA074E00E1627A /* MiniApp-SwiftUI-LayeredArchitectureApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95FC11F028AA074E00E1627A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FC11FD28AA074F00E1627A /* Preview Assets.xcassets in Resources */,
+				95FC11FA28AA074F00E1627A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95FC11EE28AA074E00E1627A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FC11F828AA074E00E1627A /* iTunesListView.swift in Sources */,
+				95FC120B28AA0B3800E1627A /* SongListRepository.swift in Sources */,
+				95FC11F628AA074E00E1627A /* MiniApp_SwiftUI_LayeredArchitectureAppApp.swift in Sources */,
+				95FC120D28AA0B7200E1627A /* APIRequest.swift in Sources */,
+				95FC120928AA0AEA00E1627A /* SongListFeature.swift in Sources */,
+				95FC120F28AA0BE200E1627A /* Song.swift in Sources */,
+				95FC122E28AA21FA00E1627A /* SafariView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95FC11FE28AA074F00E1627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95FC11FF28AA074F00E1627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95FC120128AA074F00E1627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniApp-SwiftUI-LayeredArchitectureApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7X9S244452;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.MiniApp-SwiftUI-LayeredArchitectureApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95FC120228AA074F00E1627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniApp-SwiftUI-LayeredArchitectureApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7X9S244452;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.MiniApp-SwiftUI-LayeredArchitectureApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95FC11ED28AA074E00E1627A /* Build configuration list for PBXProject "MiniApp-SwiftUI-LayeredArchitectureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FC11FE28AA074F00E1627A /* Debug */,
+				95FC11FF28AA074F00E1627A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FC120028AA074F00E1627A /* Build configuration list for PBXNativeTarget "MiniApp-SwiftUI-LayeredArchitectureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95FC120128AA074F00E1627A /* Debug */,
+				95FC120228AA074F00E1627A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95FC122A28AA1C8B00E1627A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95FC122B28AA1C8B00E1627A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95FC122A28AA1C8B00E1627A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 95FC11EA28AA074E00E1627A /* Project object */;
+}
